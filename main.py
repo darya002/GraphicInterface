@@ -1,14 +1,14 @@
 import os
+import json
 import tkinter as tk
 from login_form import LoginForm
+from tkinter import messagebox
 
 def main():
     root = tk.Tk()
     root.title("Форма входа")
 
-    if not os.path.exists("session.json"):
-        login_form = LoginForm(root)
-
+    login_form = LoginForm(root)
     root.mainloop()
 
 if __name__ == "__main__":
