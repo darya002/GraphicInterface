@@ -2,7 +2,6 @@ import json
 import os
 from tkinter import messagebox
 
-
 def validate_session():
     # Проверяем валидность сессии (пример)
     if os.path.exists("session.json"):
@@ -20,19 +19,16 @@ def validate_session():
                 return False
     return False
 
-
 def on_login(username, password, login_form):
     # Пример простой проверки логина и пароля
     if username == "user" and password == "password":
         # Сохраняем учетные данные в файл session.json
         save_session(username, password)
         messagebox.showinfo("Успешный вход", "Вы успешно вошли в систему!")
+        login_form.login_successful()
     else:
         messagebox.showerror("Ошибка входа", "Неверный логин или пароль.")
-
-    # Разблокировать элементы после обработки входа
-    login_form.unlock()
-
+        login_form.unlock()
 
 def save_session(username, password):
     # Сохраняем учетные данные в файл session.json

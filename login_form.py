@@ -1,15 +1,12 @@
-import json
-import os
 import tkinter as tk
-from callbacks import on_login, validate_session
-from tkinter import messagebox
+from callbacks import on_login
 
 
 class LoginForm:
-    def __init__(self, master):
+    def __init__(self, master, on_success):
         self.master = master
+        self.on_success = on_success
         self.create_widgets()
-        self.check_session()
 
     def create_widgets(self):
         # Создаем и размещаем метки и поля ввода
@@ -29,22 +26,6 @@ class LoginForm:
         self.login_button = tk.Button(self.master, text="Войти", command=self.login)
         self.login_button.pack(pady=20)
 
-    def check_session(self):
-        # Проверяем сессию при запуске формы
-        session_valid = validate_session()
-        if not session_valid:
-            # Если сессия невалидна, загружаем данные из session.json (если есть)
-            self.load_session_data()
-
-    def load_session_data(self):
-        if os.path.exists("session.json"):
-            with open("session.json", "r") as file:
-                session_data = json.load(file)
-                cached_username = session_data.get("username", "")
-                cached_password = session_data.get("password", "")
-                self.username_entry.insert(0, cached_username)
-                self.password_entry.insert(0, cached_password)
-
     def login(self):
         # Заблокировать элементы
         self.username_entry.configure(state="disabled")
@@ -62,3 +43,10 @@ class LoginForm:
         self.username_entry.configure(state="normal")
         self.password_entry.configure(state="normal")
         self.login_button.configure(state="normal")
+
+    def close(self):
+        self.master.destroy()
+
+    def login_successful(self):
+        self.close()
+        self.on_success()

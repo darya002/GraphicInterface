@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaba7f1b-d764-4220-9807-09c864cbedd5" name="Changes" comment="форма для логина и пароля 2.0">
-      <change afterPath="$PROJECT_DIR$/session.json" afterDir="false" />
+    <list default="true" id="eaba7f1b-d764-4220-9807-09c864cbedd5" name="Changes" comment="форма для логина и пароля 3.0">
+      <change afterPath="$PROJECT_DIR$/course_form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/callbacks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_form.py" afterDir="false" />
@@ -102,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719517455442</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="форма для логина и пароля 3.0">
+      <option name="closed" value="true" />
+      <created>1719519301451</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719519301451</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +128,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="форма для логина и пароля" />
     <MESSAGE value="форма для логина и пароля 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="форма для логина и пароля 2.0" />
+    <MESSAGE value="форма для логина и пароля 3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="форма для логина и пароля 3.0" />
   </component>
 </project>
