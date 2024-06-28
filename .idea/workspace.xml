@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaba7f1b-d764-4220-9807-09c864cbedd5" name="Changes" comment="форма для логина и пароля 3.0">
-      <change afterPath="$PROJECT_DIR$/course_form.py" afterDir="false" />
+    <list default="true" id="eaba7f1b-d764-4220-9807-09c864cbedd5" name="Changes" comment="форма для создания отчета 1.0">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/callbacks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_form.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +56,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.auth.executor": "Run",
     "Python.callbacks.executor": "Run",
+    "Python.course_form.executor": "Run",
     "Python.form_for_report.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.session.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -110,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719519301451</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="форма для создания отчета 1.0">
+      <option name="closed" value="true" />
+      <created>1719570369344</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719570369344</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +146,7 @@
     <MESSAGE value="форма для логина и пароля" />
     <MESSAGE value="форма для логина и пароля 2.0" />
     <MESSAGE value="форма для логина и пароля 3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="форма для логина и пароля 3.0" />
+    <MESSAGE value="форма для создания отчета 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="форма для создания отчета 1.0" />
   </component>
 </project>

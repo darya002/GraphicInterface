@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
+from logic import build_report  # Импортируем метод build_report из модуля logic
 
 class CourseForm:
     def __init__(self, master):
@@ -40,13 +41,31 @@ class CourseForm:
             self.output_entry.configure(state="readonly")
 
     def create_report(self):
-        # Обработчик кнопки "Создать отчет"
+        # Заблокировать элементы
+        self.lock_elements()
+
         course_link = self.course_entry.get()
         output_dir = self.output_entry.get()
 
-        # Допустим, здесь будет логика создания отчета
-        # Например, проверка введенных данных и создание файла отчета
         if course_link and output_dir:
-            messagebox.showinfo("Отчет создан", "Отчет успешно создан.")
+            try:
+                # Вызов метода build_report из модуля logic
+                build_report(course_link, output_dir)
+                messagebox.showinfo("Отчет создан", "Отчет успешно создан.")
+            except Exception as e:
+                messagebox.showerror("Ошибка", f"Ошибка при создании отчета: {str(e)}")
         else:
             messagebox.showerror("Ошибка", "Пожалуйста, заполните все поля перед созданием отчета.")
+
+        # Разблокировать элементы
+        self.unlock_elements()
+
+    def lock_elements(self):
+        self.course_entry.configure(state="disabled")
+        self.select_dir_button.configure(state="disabled")
+        self.create_report_button.configure(state="disabled")
+
+    def unlock_elements(self):
+        self.course_entry.configure(state="normal")
+        self.select_dir_button.configure(state="normal")
+        self.create_report_button.configure(state="normal")
